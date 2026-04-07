@@ -1,0 +1,55 @@
+{
+	"name": "n8n-nodes-x402",
+	"version": "0.1.0",
+	"description": "n8n nodes for x402 micropayments — accept and send HTTP 402 payments",
+	"license": "MIT",
+	"homepage": "https://smartflowproai.com",
+	"keywords": [
+		"n8n-community-node-package",
+		"x402",
+		"micropayments",
+		"402",
+		"payment"
+	],
+	"author": {
+		"name": "Tom Smart",
+		"email": "info@smartflowproai.com"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/smartflowproai-lang/n8n-nodes-x402.git"
+	},
+	"scripts": {
+		"build": "n8n-node build",
+		"build:watch": "tsc --watch",
+		"dev": "n8n-node dev",
+		"lint": "n8n-node lint",
+		"lint:fix": "n8n-node lint --fix",
+		"release": "n8n-node release",
+		"prepublishOnly": "n8n-node prerelease"
+	},
+	"files": [
+		"dist"
+	],
+	"n8n": {
+		"n8nNodesApiVersion": 1,
+		"strict": true,
+		"credentials": [
+			"dist/credentials/X402Api.credentials.js"
+		],
+		"nodes": [
+			"dist/nodes/X402Trigger/X402Trigger.node.js",
+			"dist/nodes/X402Pay/X402Pay.node.js"
+		]
+	},
+	"devDependencies": {
+		"@n8n/node-cli": "*",
+		"eslint": "9.39.4",
+		"prettier": "3.8.1",
+		"release-it": "19.2.4",
+		"typescript": "5.9.3"
+	},
+	"peerDependencies": {
+		"n8n-workflow": "*"
+	}
+}

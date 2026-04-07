@@ -1,0 +1,17 @@
+{
+	"node": "n8n-nodes-x402.x402Pay",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": ["Development", "Finance & Accounting"],
+	"resources": {
+		"primaryDocumentation": [
+			{
+				"url": "https://www.x402.org/"
+			}
+		]
+	},
+	"alias": ["http", "402", "payment", "micropayment", "x402", "pay", "request"],
+	"subcategories": {
+		"Development": ["Core Nodes"]
+	}
+}

@@ -1,0 +1,17 @@
+{
+	"node": "n8n-nodes-x402.x402Trigger",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": ["Development", "Finance & Accounting"],
+	"resources": {
+		"primaryDocumentation": [
+			{
+				"url": "https://www.x402.org/"
+			}
+		]
+	},
+	"alias": ["webhook", "402", "payment", "micropayment", "x402", "trigger"],
+	"subcategories": {
+		"Development": ["Core Nodes"]
+	}
+}
