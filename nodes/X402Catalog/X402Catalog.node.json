@@ -1,0 +1,17 @@
+{
+	"node": "n8n-nodes-x402.x402Catalog",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": ["Development", "Data & Storage"],
+	"resources": {
+		"primaryDocumentation": [
+			{
+				"url": "https://smartflowproai.com/catalog"
+			}
+		]
+	},
+	"alias": ["x402", "catalog", "mapper", "discovery", "endpoint", "smartflow"],
+	"subcategories": {
+		"Development": ["Core Nodes"]
+	}
+}

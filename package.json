@@ -1,7 +1,7 @@
 {
 	"name": "n8n-nodes-x402",
-	"version": "0.1.0",
-	"description": "n8n nodes for x402 micropayments — accept and send HTTP 402 payments",
+	"version": "0.2.0",
+	"description": "n8n nodes for x402 micropayments — accept payments, send payments, and query the SmartFlow Observatory endpoint catalogue (58k+ endpoints).",
 	"license": "MIT",
 	"homepage": "https://smartflowproai.com",
 	"keywords": [
@@ -9,7 +9,12 @@
 		"x402",
 		"micropayments",
 		"402",
-		"payment"
+		"payment",
+		"catalog",
+		"mapper",
+		"discovery",
+		"smartflow",
+		"observatory"
 	],
 	"author": {
 		"name": "Tom Smart",
@@ -35,11 +40,13 @@
 		"n8nNodesApiVersion": 1,
 		"strict": true,
 		"credentials": [
-			"dist/credentials/X402Api.credentials.js"
+			"dist/credentials/X402Api.credentials.js",
+			"dist/credentials/SmartFlowMapperApi.credentials.js"
 		],
 		"nodes": [
 			"dist/nodes/X402Trigger/X402Trigger.node.js",
-			"dist/nodes/X402Pay/X402Pay.node.js"
+			"dist/nodes/X402Pay/X402Pay.node.js",
+			"dist/nodes/X402Catalog/X402Catalog.node.js"
 		]
 	},
 	"devDependencies": {
