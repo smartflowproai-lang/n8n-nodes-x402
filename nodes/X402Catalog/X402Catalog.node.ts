@@ -108,7 +108,7 @@ export class X402Catalog implements INodeType {
 				},
 			},
 			{
-				displayName: "Strict v2 Spec Valid",
+				displayName: 'Strict V2 Spec Valid',
 				name: "specValid",
 				type: "options",
 				options: [
@@ -140,9 +140,9 @@ export class X402Catalog implements INodeType {
 				displayName: "Limit",
 				name: "limit",
 				type: "number",
-				default: 100,
+				default: 50,
 				typeOptions: { minValue: 1, maxValue: 500 },
-				description: "Maximum number of endpoints to return (1-500).",
+				description: 'Max number of results to return',
 				displayOptions: {
 					show: { operation: ["listEndpoints", "searchEndpoints", "getActiveEndpoints"] },
 				},
@@ -153,7 +153,7 @@ export class X402Catalog implements INodeType {
 				type: "number",
 				default: 0,
 				typeOptions: { minValue: 0 },
-				description: "Pagination offset.",
+				description: 'Pagination offset',
 				displayOptions: {
 					show: { operation: ["listEndpoints"] },
 				},
@@ -167,7 +167,7 @@ export class X402Catalog implements INodeType {
 				default: "",
 				required: true,
 				placeholder: "weather",
-				description: "Substring to match against endpoint URLs.",
+				description: 'Substring to match against endpoint URLs',
 				displayOptions: {
 					show: { operation: ["searchEndpoints"] },
 				},
@@ -181,7 +181,7 @@ export class X402Catalog implements INodeType {
 				default: "",
 				required: true,
 				placeholder: "https://api.example.com/x402-resource",
-				description: "Full URL of the endpoint to look up.",
+				description: 'Full URL of the endpoint to look up',
 				displayOptions: {
 					show: { operation: ["getEndpointDetails"] },
 				},
@@ -201,6 +201,7 @@ export class X402Catalog implements INodeType {
 				},
 			},
 		],
+		usableAsTool: true,
 	};
 
 	async execute(this: IExecuteFunctions): Promise<INodeExecutionData[][]> {

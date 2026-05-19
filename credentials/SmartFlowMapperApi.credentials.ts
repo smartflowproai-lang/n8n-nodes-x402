@@ -6,6 +6,7 @@ import {
 } from "n8n-workflow";
 
 export class SmartFlowMapperApi implements ICredentialType {
+	icon = { light: "file:x402.svg", dark: "file:x402.svg" };
 	name = "smartFlowMapperApi";
 	displayName = "SmartFlow Mapper API";
 	documentationUrl = "https://smartflowproai.com/catalog";

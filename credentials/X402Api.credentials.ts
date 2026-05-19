@@ -6,8 +6,9 @@ import {
 } from "n8n-workflow";
 
 export class X402Api implements ICredentialType {
+	icon = { light: "file:x402.svg", dark: "file:x402.svg" };
 	name = "x402Api";
-	displayName = "x402 API";
+	displayName = 'X402 API';
 	documentationUrl = "https://www.x402.org/";
 
 	properties: INodeProperties[] = [
